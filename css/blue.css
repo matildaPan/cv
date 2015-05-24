@@ -1,0 +1,28 @@
+/* -- Blue color 
+-------------------------------------------------------------------------------*/
+
+a:hover, a > *:hover, a:focus, a > *:focus,
+.text-primary,
+.contact-icon,
+ul.social-icons li a:hover i {
+	color: #25b5f1;
+}
+
+.pace .pace-progress,
+.copyright:before,
+.owl-page.active,
+.btn-primary,
+.contact-form-trigger,
+.label-primiary,
+.progress-bar-primary,
+.sb-primary .skill-rate-on,
+.te-primary:before {
+	background-color: #25b5f1;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.contact-form-trigger:hover,
+#contact-form-holder { 
+	background-color: #07a2e2;
+}

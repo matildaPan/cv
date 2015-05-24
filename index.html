@@ -1,18 +1,49 @@
 <!doctype html>
 <html ng-app="myApp">
 <head>
-	<title>Matilda CV</title>
-    <!--External CSS-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.js"></script>
+    <!-- Title -->
+    <title translate="TITLE">Matilda Pan, Full-stack Laravel/AngularJS/JQuery Developer</title>
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matilda Pan, Full-stack Laravel/AngularJS/JQuery Developer">
+    <meta name="keywords" content="Matilda Pan, JQuery, AngularJS, responsive, one page, cv, bootstrap, personal showcase, html5, css3, retina">
+    <meta name="author" content="Matilda Pan">
 
-    <!--Site JS-->
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/service.js"></script>
-    <script type="text/javascript" src="js/controller.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Retina Images -->
+    <script>
+if ((window.devicePixelRatio === undefined ? 1 : window.devicePixelRatio) > 1)
+    document.cookie = 'HTTP_IS_RETINA=1;path=/';
+    </script>
+    <!-- End Retina Images -->
+    <!-- Google Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/flag-icon.css" />
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fs.wallpaper.css" />
+    <link rel="stylesheet" type="text/css" href="css/blue.css" />
+
+
 </head>
 
 <body>
@@ -34,13 +65,44 @@
 
 
     <div id="main">
-        TEST-DEVELOP-BRANCH
 
-        <div ng-view></div>
+        <div ng-view class="view {{ pageClass }}" ></div>
 
 
 
     </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/libs/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.easing.min.js"></script>
+    <!-- Angular -->
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular/angular-animate/angular-animate.js"></script>
+    <script src="vendor/angular/angular-cookies/angular-cookies.js"></script>
+    <script src="vendor/angular/angular-resource/angular-resource.js"></script>
+    <script src="vendor/angular/angular-sanitize/angular-sanitize.js"></script>
+    <script src="vendor/angular/angular-touch/angular-touch.js"></script>
+    <!-- Vendor -->
+    <script src="vendor/angular/angular-ui-router/angular-ui-router.js"></script>
+    <script src="vendor/angular/ngstorage/ngStorage.js"></script>
+    <script src="vendor/angular/angular-ui-utils/ui-utils.js"></script>
+    <script src="vendor/angular/angular-scroll/angular-scroll.js"></script>
+    <script src="vendor/angular/angular-appear/angular-appear.js"></script>
+    <!-- bootstrap -->
+    <script src="vendor/angular/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- lazyload -->
+    <script src="vendor/angular/oclazyload/ocLazyLoad.js"></script>
+    <!-- translate -->
+    <script src="vendor/angular/angular-translate/angular-translate.js"></script>
+    <script src="vendor/angular/angular-translate/loader-static-files.js"></script>
+    <script src="vendor/angular/angular-translate/storage-cookie.js"></script>
+    <script src="vendor/angular/angular-translate/storage-local.js"></script>
+    <!--online cdnjs-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+    <!-- App -->
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
 
 </body>
 

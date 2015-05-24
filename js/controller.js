@@ -1,11 +1,14 @@
-app.controller('mainController', function($scope) {
+app.controller('homeController', function($scope) {
     $scope.message = 'Home';
+    $scope.pageClass= 'page-home';
 });
 
-app.controller('aboutController', function($scope) {
+app.controller('educationController', function($scope) {
     $scope.message = 'education';
+    $scope.pageClass = 'page-education';
 });
 
-app.controller('contactController', function($scope) {
+app.controller('skillController', function($scope) {
     $scope.message = 'skill';
+    $scope.pageClass = 'page-skill';
 });
