@@ -1,5 +1,6 @@
-var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
+var app = angular.module('myApp', ['ui.router', 'ngAnimate']);
 
+/**
 app.config(function($routeProvider) {
         $routeProvider
             .when('/', {
@@ -23,3 +24,4 @@ app.config(function($routeProvider) {
             });
 
 });
+*/
