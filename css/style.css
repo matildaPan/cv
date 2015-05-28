@@ -1,63 +1,7 @@
-﻿/* Default view */
-.view{
-  position: absolute;
-  top: 100px;
-  width: 100%;
-  transition: 300ms;
+﻿body{
+    padding-top: 5%;
 }
 
-/* page-home animation*/
-.pgae-home.view.ng-enter{
-  left: -100%;
-}
-
-.page-home.view.ng-enter.ng-enter-active{
-  left: 0%;
-}
-
-.page-home.view.ng-leave{
-  left: 0%;
-}
-
-.page-home.view.ng-leave.ng-leave-active{
-  left: 100%;
-}
-
-/* page-education animation*/
-.page-education.view.ng-enter{
-  left: 100%;
-}
-
-.page-education.view.ng-enter.ng-enter-active{
-  left: 0%;
-}
-
-.page-education.view.ng-leave{
-  left: 0%;
-}
-
-.page-education.view.ng-leave.ng-leave-active{
-  left: -100%;
-}
-
-/* page-skill animation*/
-.page-skill.view.ng-enter{
-  top: 100%;
-}
-
-.page-skill.view.ng-enter.ng-enter-active{
-  top: 0%;
-}
-
-.page-skill.view.ng-leave{
-  top: 0%;
-}
-
-.page-skill.view.ng-leave.ng-leave-active{
-  top: -100%;
-}
-
-/* page-skill animation*/
-.welcome.view.ng-enter{
-  opacity: 0;
+nav{
+	background-color: #DFE6F0;
 }
