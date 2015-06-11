@@ -1,15 +1,12 @@
-<header>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">Matilda</a>
-            </div>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#education"><i class="fa fa-shield"></i> Education</a></li>
-                <li><a href="#skill"><i class="fa fa-comment"></i>Skills</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<div class="container">
+    <div class="navbar-header">
+        <div class="logo hidden-xs"><div>Matilda <span>Pan</span></div></div>
+    </div>
+    <div id="nav-menu" class="visible-xs" data-ng-click="isCollapsed = !isCollapsed"></div>
+    <div class="navbar-right" collapse="isCollapsed">
+        <ul class="nav navbar-nav">
+            <li><a href="#home"><span>Home</span></a></li>
+            <li><a href="#production"><span>Production</span></a></li>
+        </ul>
+    </div>
+</div>
