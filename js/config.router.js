@@ -9,49 +9,32 @@ angular.module('myApp')
       function ($stateProvider, $urlRouterProvider) {
 
       	$urlRouterProvider
-		   .otherwise('/home');
-      	$stateProvider
-			.state('home', {
-				url: '/home',
-				templateUrl: 'pages/app.html'
+		   .otherwise('/main');
+	      $stateProvider
+		    .state('main', {
+			    url: '/main',
+			    templateUrl: 'pages/app.html',
+			    controller: 'mainController'
 			})
-		.state('home.create', {
-			url: '',      //keep the url empty, so this will make it match the same url as it's parent state url, because it appends nothing to the parent url.
-			templateUrl: 'pages/blocks/create.html',
-		})
-		.state('home.edit', {
-			url: '/ep',
-			templateUrl: 'pages/blocks/edit.html'
-		});
-      	//.state('main', {
-      	//	url: '/main',
-      	//	onEnter: function() {
-      	//		$('html body').animate({
-      	//			scrollTop: $("#main").offset().top
-      	//		}, 1000);
-      	//	}
-      	//})
-      	//.state('production', {
-      	//	url: '/production',
-      	//	onEnter: function () {
-      	//		$('html body').animate({
-      	//			scrollTop: $("#production").offset().top
-      	//		}, 1000);
-      	//	}
-      	//})
-      	//  .state('production.create', {
-      	//    url: '',      //keep the url empty, so this will make it match the same url as it's parent state url, because it appends nothing to the parent url.
-      	//    templateUrl: 'pages/blocks/create.html',
-      	//  }) 
-      	//  .state('production.edit', {
-      	//      url: '/edit',
-      	//      templateUrl: 'pages/blocks/edit.html'
-      	//  })
 
-      	//.state('production.delete', {
-      	//	url: '/delete',
-      	//	templateUrl: 'pages/blocks/delete.html'
-      	//});
+//		    .state('production', {
+//			    url: '/production',
+//			    templateUrl: 'pages/blocks/production.html'
+//
+//		    })
+      		.state('main.create', {
+      		url: '',      //keep the url empty, so this will make it match the same url as it's parent state url, because it appends nothing to the parent url.
+      		templateUrl: 'pages/blocks/production/create.html'
+      		}) 
+      		.state('main.edit', {
+      			url: '/edit',
+      			templateUrl: 'pages/blocks/production/edit.html'
+      		})
+
+      	.state('main.delete', {
+      		url: '/delete',
+      		templateUrl: 'pages/blocks/production/delete.html'
+      	});
 
 
       }]
