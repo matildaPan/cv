@@ -1,4 +1,4 @@
-app.controller('mainController', function ($scope, $location, $anchorScroll) {
+app.controller('mainController', ['$scope', '$location', '$anchorScroll', 'textService', function ($scope, $location, $anchorScroll, textService) {
 	$scope.scrollTo = function (id) {
 		//stop the URL from changing to #id
 		var old = $location.hash();
@@ -7,5 +7,7 @@ app.controller('mainController', function ($scope, $location, $anchorScroll) {
 		$anchorScroll();
 		$location.hash(old);
 	};
-});
+
+	$scope.TextObj = textService.getTextData();
+}]);
 
