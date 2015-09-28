@@ -1,7 +1,7 @@
 app.service('textService', [ function(){
 	this.getTextData = function() {
 		return {
-			title: 'Product Description'
+			title: 'Product Description llllll'
 		};
 	}
 }]);

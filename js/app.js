@@ -1,4 +1,3 @@
-var app = angular.module('myApp', ['ui.router', 'ngAnimate', 'ui.bootstrap'])
-	.run(['$anchorScroll', function ($anchorScroll) {
-	$anchorScroll.yOffset = 100;   // always scroll by 50 extra pixels
-}]);
+var app = angular.module('myApp', ['ui.bootstrap', 'duScroll'])
+	.value('duScrollDuration', 2000)
+	.value('duScrollOffset', 90);
