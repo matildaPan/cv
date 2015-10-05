@@ -5,8 +5,17 @@
     <div id="nav-menu" class="visible-xs" data-ng-click="isCollapsed = !isCollapsed"></div>
     <div class="navbar-right" collapse="isCollapsed">
         <ul class="nav navbar-nav">
-            <li du-scrollspy="home" ><a id="nav_home" du-smooth-scroll href="#home"><span>Home</span></a></li>
-            <li du-scrollspy="experience" ><a id="nav_experience" du-smooth-scroll href="#experience"><span>Production</span></a></li>
+            <li >
+                <a id="nav_home" ui-sref="home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li >
+                <a id="nav_portfolio" ui-sref="portfolio">
+                    <span>Portfolio</span>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
+
