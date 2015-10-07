@@ -1,5 +1,5 @@
 var app = angular.module('myApp', ['ui.router', 'ui.bootstrap', 'duScroll'])
-	.value('duScrollDuration', 2000)
+	.value('duScrollDuration', 1000)
 	.value('duScrollOffset', 90);
 
 app.config(function($stateProvider, $urlRouterProvider){
