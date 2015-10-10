@@ -521,7 +521,7 @@ section experience
 }
 .cd-slider-navigation li {
   display: inline-block;
-  margin-right: 20px;
+  margin: 20px;
 }
 .cd-slider-navigation li:last-of-type {
   margin-right: 0;
@@ -531,6 +531,7 @@ section experience
   position: relative;
   height: 40px;
   width: 40px;
+  padding-top: 5px;
 /*  background: url(../img/cd-icon-navigation.svg) no-repeat -10px -10px;*/
   border-radius: 50%;
   background-color: #ffffff;
@@ -553,9 +554,9 @@ section experience
 /*Dynamic class*/
 
 /*du-scrollspy active class by default*/
-.cd-side-navigation .active{
-	background: #83b0b9;
-	color: #131519;
+.active{
+	background: black;
+	color: red;
 }
 
 
