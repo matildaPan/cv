@@ -1,8 +1,8 @@
 var app = angular.module('myApp', ['ui.router', 'ui.bootstrap', 'duScroll'])
-	.value('duScrollDuration', 1000)
+	.value('duScrollDuration', 500)
 	.value('duScrollOffset', 90);
 
-app.config(function($stateProvider, $urlRouterProvider){
+app.config(['$stateProvider', '$urlRouterProvider',  function($stateProvider, $urlRouterProvider){
 	$urlRouterProvider.otherwise("/home");
 
 	$stateProvider
@@ -14,6 +14,10 @@ app.config(function($stateProvider, $urlRouterProvider){
 		.state('portfolio', {
 			url: '/portfolio',
 			templateUrl: 'partials/portfolio/portfolio.html',
-			//controller: 'portfolioController'
+			controller: 'portfolioController'
 		});
-});
+}]);
+
+app.run(['$rootScope', '$document', function($rootScope, $document){
+
+}])

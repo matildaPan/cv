@@ -3,14 +3,14 @@
 		<div class="logo hidden-xs" ><div>Matilda<span> Pan</span></div></div>
 	</div>
 	<div id="nav-menu" class="visible-xs" data-ng-click="isCollapsed = !isCollapsed"></div>
-	<div class="navbar-right" collapse="isCollapsed">
+	<div class="navbar-right" uib-collapse="isCollapsed">
 		<ul class="nav navbar-nav">
-			<li >
+			<li ui-sref-active="active">
 				<a id="nav_home" ui-sref="home">
 					<span>Home</span>
 				</a>
 			</li>
-			<li >
+			<li  ui-sref-active="active">
 				<a id="nav_portfolio" ui-sref="portfolio">
 					<span>Portfolio</span>
 				</a>
