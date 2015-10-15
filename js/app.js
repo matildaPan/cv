@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ui.router', 'ui.bootstrap', 'duScroll'])
+var app = angular.module('myApp', ['ui.router', 'ui.bootstrap', 'duScroll', 'ui.googleMap', 'ui.load'])
 	.value('duScrollDuration', 500)
 	.value('duScrollOffset', 90);
 
@@ -18,8 +18,8 @@ app.config(['$stateProvider', '$urlRouterProvider',  function($stateProvider, $u
 		})
 		.state('contact', {
 			url: '/contact',
-			templateUrl: 'partials/contact/contact.html'
-			//controller: 'contactController'
+			templateUrl: 'partials/contact/contact.html',
+			controller: 'contactController'
 		})
 		;
 }]);
