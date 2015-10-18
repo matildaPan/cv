@@ -137,8 +137,8 @@ angular.module('ui.googleMap', [])
                 ]
             }
         ]
-        var yourLatitude = -33.828558;
-        var yourLongitude = 151.083969;
+        var yourLatitude = -34.0314726;
+        var yourLongitude = 151.0579866;
         
         var myOptions = {
             zoom: 14,
@@ -153,7 +153,7 @@ angular.module('ui.googleMap', [])
         };
         var map = new google.maps.Map(element, myOptions);
         
-        var image = 'css/images/my-location.png';
+        var image = 'css/images/map-marker-icon.png';
         var myLatLng = new google.maps.LatLng(yourLatitude, yourLongitude);
         var myLocation = new google.maps.Marker({
             position: myLatLng,

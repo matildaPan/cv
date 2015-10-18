@@ -1,5 +1,5 @@
 angular.module('myApp')
-  .directive('googleMap', ['uiLoad','uiGoogleMap', function (uiLoad, uiGoogleMap) {
+  .directive('googleMap', ['uiGoogleMap', function ( uiGoogleMap) {
         return {
             restrict: 'AC',
             link: function (scope, el, attr) {
