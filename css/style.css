@@ -489,7 +489,7 @@ ul.social-icons li a:hover, ul.social-icons li a:hover:focus  {
 
 
 /*---------------------------------
-section experience
+Section Portfolio CSS
 -----------------------------------*/
 
 #portfolio_section {
@@ -498,6 +498,13 @@ section experience
 	background-color: #FFFFFF;
 }
 
+/*Each portfolio children div*/
+.portfolio-panel{
+	width: 100%;
+/*	text-align: center;*/
+}
+
+/*Bottom Navigation Bar CSS*/
 .cd-slider-navigation {
   position: fixed;
   bottom: 0;
@@ -537,6 +544,10 @@ section experience
   background-color: #ffffff;
 }
 
+/*Bottom Navigation Bar CSS END*/
+
+/*Bottom Navigation Bar Element hover-over tooltip*/
+
 /*.tooltip{
 	background-color: red;
 	border: red solid 1px;
@@ -544,11 +555,6 @@ section experience
 
 }*/
 
-
-.portfolio-panel{
-	width: 100%;
-/*	text-align: center;*/
-}
 
 
 /*Dynamic class*/

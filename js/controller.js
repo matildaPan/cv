@@ -16,6 +16,18 @@ app.controller('portfolioController', ['$scope', '$location', 'textService', '$d
 	});
 }]);
 
+app.controller('projectsController', ['$scope', '$uibModal', function($scope, $uibModal){
+
+	$scope.viewDetail = function() {
+		$uibModal.open({
+			animation: true,
+			templateUrl: 'partials/portfolio/projectDetail.html',
+			//controller: 'ModalInstanceCtrl',
+			size: 'lg'
+		});
+	};
+}]);
+
 
 app.controller('contactController', ['$scope', function($scope){
 	// var myCity = {
