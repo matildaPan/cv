@@ -321,7 +321,7 @@ nav{
 
 
 /*------------------------
-section home.html css
+Page home.html css
 --------------------------*/
 
 #home {
@@ -489,19 +489,19 @@ ul.social-icons li a:hover, ul.social-icons li a:hover:focus  {
 
 
 /*---------------------------------
-Section Portfolio CSS
+Page Portfolio CSS
 -----------------------------------*/
 
 #portfolio_section {
 	width: 100%;
-/*	height: 100%;*/
+	height: 100%;
 	background-color: #FFFFFF;
 }
 
-/*Each portfolio children div*/
+/*Each children section in Portfolio Page*/
 .portfolio-panel{
 	width: 100%;
-/*	text-align: center;*/
+	position: relative;
 }
 
 /*Bottom Navigation Bar CSS*/
@@ -556,14 +556,234 @@ Section Portfolio CSS
 }*/
 
 
-
-/*Dynamic class*/
-
-/*du-scrollspy active class by default*/
+/*du-scrollspy active class for Bottom navigation bar in Portfolio Page by default*/
 #portfolio_section .active a{
 	background: #25b5f1;
 	color: #FFFFFF;
 }
+
+
+/*Skill Section CSS*/
+#skills {
+	width: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	background-color: #262B30;
+}
+
+
+#skills .container {
+	padding: 71px 0 54px;
+	position: relative;
+	z-index: 1;
+}
+
+#skills .skill-header {
+	color: #fff;
+	height: 18px;
+	min-width: 140px;
+	line-height: 0;
+	padding: 5px 20px;
+	position: relative;
+	margin-top: -68px;
+}
+
+#skills .skill-heading {
+	font-weight: 600;
+	color: #fff;
+}
+
+#skills .current {
+	display: block;
+	height: 45px;
+	margin-bottom: 20px;
+	position: relative;
+	padding: 5px;
+	border: 2px solid #25b5f1;
+	background: rgba(56,56,56,.8);
+}
+
+#skills .current:before {
+	color: #fff;
+	content: attr(title);
+	left: 15px;
+	position: absolute;
+	top: 10px;
+	z-index: 2;
+	font-size: 14px;
+}
+
+#skills .current .bar {
+	background: #25b5f1;
+	display: inline-block;
+	height: 100%;
+	min-width: 164px;
+	opacity: .9;
+}
+/*Skill Section CSS END*/
+
+/*Education Section CSS*/
+#education{
+	width: 100%;
+/*	margin-bottom: 90px;*/
+}
+
+#unsw{
+	border-right: 5px solid #CCCCCC;
+}
+
+
+/*Education Section CSS END*/
+
+/*Project Section CSS*/
+#projects{
+	width: 100%;
+	margin-bottom: 90px;
+}
+.single-project {
+	position: relative;
+	width: 25%;
+	float: left;
+	background: #000;
+	overflow: hidden;
+}
+
+.single-project a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.project-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.75);
+	opacity: 0;
+	visibility: hidden;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.single-project:hover .project-mask {
+	opacity: 1;
+	visibility: visible;
+}
+
+.project-info {
+	position: absolute;
+	top: 50%;
+	right: -100%;
+	width: 100%;
+	text-align: right;
+	opacity: 0;
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+	-moz-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+	-webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+	-o-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.3s;
+}
+
+.single-project:hover .project-info {
+	right: 0;
+	opacity: 1;
+} 
+
+.project-title,
+.project-caption,
+.project-buttons {
+	padding: 0 20px;
+}
+
+.project-title {
+	font-size: 36px;
+	font-weight: 100;
+}
+
+.project-caption {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.project-buttons {
+	border-top: 1px solid rgba(255,255,255,0.2);
+	margin-top: 15px;
+	padding-top: 15px;
+}
+/*Project Section CSS END*/
+
+/*---------------------------------
+Page Contact CSS
+-----------------------------------*/
+
+/*Map CSS*/
+#google-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+
+/*---------------------------------
+Media Queries
+-----------------------------------*/
+@media (max-width: 1500px) {
+	.single-project {
+		width: 33.33333%;
+	}
+}
+
+@media (min-width: 1200px) {
+	
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+
+@media (max-width: 991px) {
+	#unsw{
+		border-right: 0px;
+		border-bottom: 5px solid #CCCCCC;
+	}
+
+	.single-project {
+		width: 50%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	  
+}
+
+@media (max-width: 767px) {
+	#unsw{
+		border-right: 0px;
+		border-bottom: 5px solid #CCCCCC;
+	}
+	.single-project {
+		width: 100%;
+	}
+
+}
+
+
+
 
 
 
