@@ -732,7 +732,19 @@ Page Contact CSS
     z-index: 1;
 }
 
+.contact-content {
+	position: relative;
+	background: rgba(255,255,255,0.8);
+	width: 50%;
+	z-index: 2;
+	height: 100%;
+	padding-top: 90px;
+	text-align: center;
+}
 
+.black .contact-content {
+	background: rgba(0,0,0,0.6);
+}
 
 /*---------------------------------
 Media Queries
@@ -741,6 +753,10 @@ Media Queries
 	.single-project {
 		width: 33.33333%;
 	}
+
+/*	.contact-content {
+		width: 45%;
+	}*/
 }
 
 @media (min-width: 1200px) {
@@ -765,6 +781,10 @@ Media Queries
 	.single-project {
 		width: 50%;
 	}
+
+	.contact-content {
+		width: 60%;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -778,6 +798,10 @@ Media Queries
 	}
 	.single-project {
 		width: 100%;
+	}
+
+	.contact-content {
+		width: 70%;
 	}
 
 }
