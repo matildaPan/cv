@@ -8,7 +8,7 @@
 /* ----------------------------------------------------------------------------- */
 
 body, html {
-	color: #FFC0B6;
+	color: #282828;;
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
@@ -176,7 +176,7 @@ hr.sep-line { display: block; border: none; margin:50px 0px; height: 1px; backgr
 }
 
 .logo span {
-	color: #9C2A18;
+	color: #26335A;
 }
 .logo .border{
 	border:3px solid white;
@@ -224,7 +224,7 @@ hr.sep-line { display: block; border: none; margin:50px 0px; height: 1px; backgr
 }
 
 .navbar-nav > li.active a{
-	border-bottom:3px solid #9C2A18;
+	border-bottom:3px solid #26335A;
 	padding-bottom: 5px;
 }
 
@@ -315,7 +315,7 @@ body{
 	*/
 
 nav{
-	background-color: #FFC0B6;
+	background-color: #8C94A9;
 }
 
 
@@ -325,7 +325,7 @@ Page home.html css
 --------------------------*/
 
 #home {
-	background-image: url("images/backgrounds/bg-city-night.jpg");
+	background-image: url("images/backgrounds/fabric-light.png");
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -341,10 +341,13 @@ Page home.html css
 		z-index: 2;
 	}
 	
-
+#home .content #monitor{
+	position: relative;
+}
 	
 .home-content {
-	position: absolute;
+	/*position: absolute;*/
+	position: relative;
 	top: 40%;
 	left: 0;
 	right: 0;
@@ -749,9 +752,22 @@ Page Contact CSS
 /*---------------------------------
 Media Queries
 -----------------------------------*/
-@media (max-width: 1500px) {
+@media (min-width: 1500px){
+	#home svg {
+		width: 1200px;
+		height: 1200px;
+	}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1500px)  {
 	.single-project {
 		width: 33.33333%;
+	}
+
+	#home svg {
+		width: 1000px;
+		height: 1000px;
 	}
 
 /*	.contact-content {
@@ -759,15 +775,12 @@ Media Queries
 	}*/
 }
 
-@media (min-width: 1200px) {
-	
-}
-
-@media (max-width: 1199px) {
-
-}
 
 @media (min-width: 992px) and (max-width: 1199px) {
+	#home svg {
+		width: 800px;
+		height: 800px;
+	}
 	
 }
 
