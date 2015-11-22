@@ -774,6 +774,10 @@ Media Queries
 		height: 1200px;
 	}
 
+	.navbar-right {
+		display: block;
+	}
+
 }
 
 @media (min-width: 1201px) and (max-width: 1500px)  {
