@@ -348,7 +348,7 @@ Page home.html css
 }
 
 .home_title span{
-	color:#FFFFFF;
+	color:#D1D8FB;
 	font-weight:700;
 	text-transform:uppercase;
 }
@@ -358,10 +358,10 @@ Page home.html css
 	line-height:36px;
 	font-weight: 500;
 	text-align: center;
-	color:#FFFFFF;
+	color:#D1D8FB;
 }
 .home_title_sub .position{
-	color:#25b5f1; 
+	color:#FFFFFF; 
 	font-weight:700;
 }
 	
@@ -402,6 +402,15 @@ Page home.html css
     stroke-dashoffset: 0;
   }
 }
+
+.home-btn-group{
+	padding-top: 20px;
+}
+
+.home-btn-group button{
+	animation: pulse 1s infinite;
+}
+
 
 /*Social media circle buttons in home.html*/
 
