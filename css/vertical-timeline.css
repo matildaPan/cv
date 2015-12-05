@@ -202,8 +202,15 @@ Main components
   display: table;
   clear: both;
 }
-.cd-timeline-content h2 {
+/*.cd-timeline-content h2 {
   color: #303e49;
+}*/
+.cd-timeline-content .location-and-date{
+  opacity: 0.75;
+}
+
+.cd-timeline-content .location-and-date i{
+  padding: 5px;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
