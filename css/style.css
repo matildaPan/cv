@@ -176,7 +176,7 @@ hr.sep-line { display: block; border: none; margin:50px 0px; height: 1px; backgr
 }
 
 .logo span {
-	color: #86362E;
+	color: #122F7E;
 }
 .logo .border{
 	border:3px solid white;
@@ -193,7 +193,7 @@ hr.sep-line { display: block; border: none; margin:50px 0px; height: 1px; backgr
 	border:0px;  
 	text-transform: uppercase;
 	opacity:0.96;
-	color:white;
+	color:#084F7D;
 	padding: 20px 0;
 	letter-spacing: 1px;
 	/*background: none;*/
@@ -211,7 +211,7 @@ hr.sep-line { display: block; border: none; margin:50px 0px; height: 1px; backgr
 }
 
 .navbar-nav > li > a {
-	color:white;
+	color:#122F7E;
 	font-size: 12px;
 	font-weight: bold;
 }
@@ -224,7 +224,7 @@ hr.sep-line { display: block; border: none; margin:50px 0px; height: 1px; backgr
 }
 
 .navbar-nav > li.active a span{
-	border-bottom:3px solid #86362E;
+	border-bottom:3px solid #000;
 	padding-bottom: 5px;
 }
 
@@ -289,7 +289,7 @@ body{
 	*/
 
 nav{
-	background-color: #FBCFCB;
+	background-color: #F4F9FF;
 }
 
 /*------------------------
@@ -321,15 +321,14 @@ Page home.html css
 }
 	
 .home-content {
-	position: absolute;
-/*	position: relative;*/
-	top: -30%;
+/*	position: absolute;*/
+	position: relative;
+/*	top: -30%;
 	left: 0;
-	right: 0;
+	right: 0;*/
 	text-align: center;
 	width: 100%;
 	animation: fadeInDown 1s linear forwards;
-	animation-delay: 2s ; /*This duration must be equal with draw*/
 }
 
 @keyframes fadeInDown{

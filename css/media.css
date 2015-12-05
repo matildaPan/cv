@@ -278,6 +278,10 @@ Media Queries
 		display: block;
 	}
 
+	.home-content{
+		animation-delay: 2s ; /*This duration must be equal with draw*/
+	}
+
 	#unsw{
 		border-right: 0px;
 		border-bottom: 5px solid #CCCCCC;
@@ -314,6 +318,9 @@ Media Queries
 		height: 800px;
 		display: block;
 	}
+	.home-content{
+		animation-delay: 2s ; /*This duration must be equal with draw*/
+	}
 	.navbar-right {
 		display: block;
 	}
@@ -332,6 +339,9 @@ Media Queries
 		width: 1000px;
 		height: 1000px;
 		display: block;
+	}
+	.home-content{
+		animation-delay: 2s ; /*This duration must be equal with draw*/
 	}
 
 
@@ -356,6 +366,10 @@ Media Queries
 		width: 1200px;
 		height: 1200px;
 		display: block;
+	}
+	
+	.home-content{
+		animation-delay: 2s ; /*This duration must be equal with draw*/
 	}
 
 	.navbar-right {
