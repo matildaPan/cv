@@ -116,6 +116,7 @@ h6 { margin-bottom: 11px; }
 [ui-view]{
 /*	margin-top: 90px;*/
 	height: 100%;
+	overflow: hidden;
 }
 
 .page-title { position: relative; overflow: hidden; z-index: 1; }
@@ -681,7 +682,7 @@ Page Portfolio CSS
 #education section .heading{
 	color: #333333;
 	border-bottom: 1px solid #ccc;
-	margin: 0 0 30px 0;
+	margin: 0 0 20px 0;
 	padding: 20px 0;
 }
 
@@ -689,24 +690,39 @@ Page Portfolio CSS
 	color: #2F5199;
 }
 
-.edu-header img{
-	margin: 0px;
-	float: left;
-	margin-right: 10px;
+.edu-header{
+	padding: 15px 10px;
+/*	text-align: right;*/
+	text-transform: uppercase;
 }
 
-.edu-header span{
-	font-size: 24px;
-	line-height: 84px; /*the same as img height*/
-	vertical-align: middle;
+.edu-header .divider{
+/*	position: absolute;
+	bottom: 0;
+	right: 0;*/
+	width: 90%;
+	border-bottom: 1px solid #e1e1e1;
+	margin: 10px 0;
 }
 
 .edu-content{
-	clear: left;
+/*	clear: left;*/
+	padding: 15px 0 5px 30px;
+	border-left: 1px solid #e1e1e1;
+	margin-top: -10px;
+	position: absolute; /*to make its height equal to its sibling*/
+	top: 0;
+	right:0;
+	bottom:0; 
+}
+
+.edu-content-title{
+	font-size: 24px;
 }
 
 #unsw{
-	border-right: 5px solid #CCCCCC;
+	border-right: 2px dotted #e1e1e1;
+	margin-right: 20px;
 }
 
 
