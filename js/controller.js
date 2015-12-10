@@ -22,10 +22,10 @@ app.controller('portfolioController', ['$scope', '$location', 'textService', '$d
 //Project Section in Portfolio page
 app.controller('projectsController', ['$scope', '$uibModal', function($scope, $uibModal){
 
-	$scope.viewDetail = function() {
+	$scope.webDetail = function() {
 		$uibModal.open({
 			animation: true,
-			templateUrl: 'partials/portfolio/projectDetail.html'
+			templateUrl: 'partials/portfolio/webDetail.html'
 		});
 	};
 }]);

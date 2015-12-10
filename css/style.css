@@ -165,8 +165,78 @@ hr.sep-line { display: block; border: none; margin:50px 0px; height: 1px; backgr
 .dark .text-muted { color: rgba(255,255,255,0.5); }
 
 
+/*--------------------------------------
+Components
+------------------------------*/
+.btn {
+		color: inherit;
+		font-size: 11px;
+		font-weight: 500;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		border: none;
+		padding: 18px 20px;
+		margin-bottom: 3px;
+}
+
+.btn:active {
+	box-shadow: none;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+	padding: 11px 18px
+}
+
+.btn-xs, .btn-group-xs > .btn {
+	padding: 7px 14px;
+	font-size: 10px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+	padding: 20px 24px;
+	font-size: 13px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus,
+.btn-black, .btn-black:hover, .btn-black:focus,
+.dark .btn-defalut:hover, .dark .btn-defalut:focus,
+.btn-green, .btn-green:hover,  .btn-green:focus,
+.btn-red, .btn-red:hover,  .btn-red:focus,
+.btn-yellow, .btn-yellow:hover,  .btn-yellow:focus,
+.btn-orange, .btn-orange:hover,  .btn-orange:focus,
+.btn-violet, .btn-violet:hover,  .btn-violet:focus,
+.btn-blue, .btn-blue:hover,  .btn-blue:focus,
+.btn-success, .btn-danger, .btn-warning, .btn-info  { color: #fff; }
+
+
+.btn-blue{ background-color: #25b5f1; }
+.btn-green { background-color: #add71c; }
+.btn-red { background-color: #f65757; }
+.btn-yellow { background-color: #fbce43; }
+.btn-orange { background-color: #f4934c; }
+.btn-violet { background-color: #816ae6; }
+.btn-black { background-color: #000; }
+.btn-blue:hover, .btn-blue:focus { background-color: #07a2e2; }
+.btn-green:hover, .btn-green:focus { background-color: #92b80e; }
+.btn-red:hover, .btn-red:focus { background-color: #de4131; }
+.btn-yellow:hover, .btn-yellow:focus { background-color: #e6b623; }
+.btn-orange:hover, .btn-orange:focus { background-color: #e67929; }
+.btn-violet:hover, .btn-violet:focus { background-color: #684ce0; }
+.btn-black:hover, .btn-black:focus { background-color: #333; }
+.btn-default { border: 1px solid rgba(0,0,0,0.1); background: none; }
+.btn-default:hover, .btn-default:focus { border: 1px solid rgba(0,0,0,0.2); background: none; }
+.dark .btn-default { border: 1px solid rgba(255,255,255,0.2); background: none; }
+.dark .btn-default:hover, .dark .btn-default:focus { border: 1px solid rgba(255,255,255,0.5); background: none; color: #fff; }
+.btn > i, .btn > i:hover, .btn > i:focus { color: rgba(0,0,0,0.4); }
+.dark .btn-default > i, .dark .btn-default > i:hover, .dark .btn-default > i:focus {
+	color: rgba(255,255,255,0.4);
+}
+
+.btn.btn-pull-up { margin-top: -20px; }
+
 /* ----------------------------------------------------------------------------- */
-/* --- NAVIGATION
+/* --- NAVIGATION Bar
 /* ----------------------------------------------------------------------------- */
 .logo{
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
@@ -769,7 +839,7 @@ Page Portfolio CSS
 
 .project-info {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	right: -100%;
 	width: 100%;
 	text-align: right;
@@ -792,7 +862,7 @@ Page Portfolio CSS
 }
 
 .project-title {
-	font-size: 36px;
+	font-size: 24px;
 	font-weight: 100;
 }
 
