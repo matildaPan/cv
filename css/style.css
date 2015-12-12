@@ -129,7 +129,8 @@ h6 { margin-bottom: 11px; }
 
 .font-700 { font-weight: 700;}
 
-.black { background-color: #000; }
+.dark {background-color: #262B30;}
+.black { background-color: #000000; }
 .padded { padding: 60px; }
 .padded-short { padding: 30px; }
 .padded-vertical { padding: 50px 0px; }
@@ -168,6 +169,7 @@ hr.sep-line { display: block; border: none; margin:50px 0px; height: 1px; backgr
 /*--------------------------------------
 Components
 ------------------------------*/
+/*Buttons*/
 .btn {
 		color: inherit;
 		font-size: 11px;
@@ -803,13 +805,23 @@ Page Portfolio CSS
 	width: 100%;
 	margin-bottom: 90px;
 }
+
+
 .single-project {
-	position: relative;
+/*	position: relative;
 	width: 25%;
 	float: left;
 	background: #000;
-	overflow: hidden;
+	overflow: hidden;*/
+/*	display: table-cell;*/
+/*	flex: 1;*/
+	position: relative; /*for its children whose position is absolute*/
+	padding: 30px;
 }
+
+/*.single-project .project-image{
+	width: 95%;
+}*/
 
 .single-project a:hover {
 	color: inherit;
@@ -817,6 +829,7 @@ Page Portfolio CSS
 }
 
 .project-mask {
+/*	width: 465px;*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -878,6 +891,17 @@ Page Portfolio CSS
 }
 /*Project Section CSS END*/
 
+.carousel-caption {
+	color: #239BD6;
+}
+
+.carousel-indicators li{
+	border-color: #239BD6;
+}
+
+.carousel-indicators .active{
+	background-color: #239BD6;
+}
 /*---------------------------------
 Page Contact CSS
 -----------------------------------*/

@@ -1,21 +1,34 @@
 <!-- Projects -->
-<div class="projects-holder black dark clearfix" id="projects" ng-controller="projectsController">
-    <!-- Single Project -->
-    <div class="single-project animated fade-in"
-         data-ng-class="{'fade-in-animation':portfolio}">
-        <div class="project-image" >
-            <img src="css/images/projects/crantum.jpg" alt="" />
-        </div>
-        <div class="project-mask">
-            <div class="project-info">
-                <div class="project-title">Laravel/AngularJS Project</div>
-                <div class="project-caption text-blue">Value Added Calculator</div>
-                <div class="project-buttons">
-                    <a href class="btn btn-blue btn-sm" ng-click="webDetail()">View it</a> 
-                    <a href target="_blank" class="btn btn-default btn-sm">Online version</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="dark row"  ng-controller="projectsController">
+	<!-- Single Project -->
+	<div class="single-project col-lg-6 col-md-12 col-sm-12">
+		<div class="project-image" >
+			<img src="css/images/projects/laravel/home-page-small.jpg" />
+		</div>
+		<div class="project-mask">
+			<div class="project-info">
+				<div class="project-title">Laravel/AngularJS Project</div>
+				<div class="project-caption text-blue">Value Added Calculator</div>
+				<div class="project-buttons">
+					<a href class="btn btn-blue btn-sm" ng-click="webDetail()">View it</a> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="single-project col-lg-6 col-md-12 col-sm-12">
+		<div class="project-image" >
+			<img src="css/images/projects/surveys/confirmit-small.jpg" />
+		</div>
+		<div class="project-mask">
+			<div class="project-info">
+				<div class="project-title">Confirmit</div>
+				<div class="project-caption text-blue">Online Surveys</div>
+				<div class="project-buttons">
+					<a href class="btn btn-blue btn-sm" ng-click="surveyDetail()">View it</a> 
+				</div>
+			</div>
+		</div>
+	</div>
 
 </div>
