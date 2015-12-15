@@ -182,7 +182,7 @@ Media Queries
 	}
 
 	.contact-content {
-		width: 70%;
+		width: 40%;
 	}
 }
 
@@ -221,7 +221,7 @@ Media Queries
 	}
 
 	.contact-content {
-		width: 70%;
+		width: 40%;
 	}
 }
 
@@ -292,7 +292,7 @@ Media Queries
 	}
 
 	.contact-content {
-		width: 60%;
+		width: 40%;
 	}
 	.navbar-right {
 		display: block;

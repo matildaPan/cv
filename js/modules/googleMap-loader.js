@@ -141,7 +141,7 @@ angular.module('ui.googleMap', [])
         var yourLongitude = 151.0579866;
         
         var myOptions = {
-            zoom: 10,
+            zoom: 12,
             center: new google.maps.LatLng(yourLatitude, yourLongitude - 0.01),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             mapTypeControl: false,
