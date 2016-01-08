@@ -354,7 +354,11 @@ Components
 	transition: all 0.3s ease-in-out;
 }
 
-#nav-menu:hover { background-color: #FF9C8C; }
+#nav-menu:hover {
+	background-color: #08275D;
+}
+
+
 #nav-menu:hover:before { 
 	border-top: 7px double #ffffff;
 	border-bottom: 2px solid #ffffff;
@@ -647,6 +651,7 @@ Page Portfolio CSS
   text-align: center;
   width: 100%;
   background-color: #DFE6F0;
+  padding: 0;
 }
 .cd-slider-navigation::after {
   clear: both;
@@ -655,7 +660,8 @@ Page Portfolio CSS
 }
 .cd-slider-navigation li {
   display: inline-block;
-  margin: 20px;
+/*  margin: 20px;*/
+  margin: 10px;
 }
 .cd-slider-navigation li:last-of-type {
   margin-right: 0;
@@ -799,22 +805,15 @@ Page Portfolio CSS
 }
 
 .edu-content{
-/*	clear: left;*/
 	padding: 15px 0 5px 30px;
-	border-left: 1px solid #e1e1e1;
 	margin-top: -10px;
-	position: absolute; /*to make its height equal to its sibling*/
-	top: 0;
-	right:0;
-	bottom:0; 
 }
 
 .edu-content-title{
-	font-size: 24px;
+	font-size: 16px;
 }
 
 #unsw{
-	border-right: 2px dotted #e1e1e1;
 	margin-right: 20px;
 }
 
@@ -824,7 +823,8 @@ Page Portfolio CSS
 /*Project Section CSS*/
 #projects{
 	width: 100%;
-	margin-bottom: 90px;
+/*	margin-bottom: 90px;*/
+	margin-bottom: 60px;
 }
 
 
@@ -874,7 +874,7 @@ Page Portfolio CSS
 .project-info {
 	position: absolute;
 	top: 40%;
-	right: -100%;
+/*	right: -100%;*/
 	width: 100%;
 	text-align: right;
 	opacity: 0;

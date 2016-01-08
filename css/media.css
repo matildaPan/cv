@@ -173,10 +173,6 @@ Media Queries
 		font-size: 26px;
 	}
 
-	#unsw{
-		border-right: 0px;
-		border-bottom: 2px dotted #CCCCCC;
-	}
 	.single-project {
 		width: 100%;
 	}
@@ -212,10 +208,6 @@ Media Queries
 		font-size: 26px;
 	}
 
-	#unsw{
-		border-right: 0px;
-		border-bottom: 2px dotted #CCCCCC;
-	}
 	.single-project {
 		width: 100%;
 	}
@@ -282,10 +274,22 @@ Media Queries
 		animation-delay: 2s ; /*This duration must be equal with draw*/
 	}
 
-	#unsw{
-		border-right: 0px;
-		border-bottom: 2px dotted #CCCCCC;
+	.edu-header .divider{
+		border-bottom: 1px solid #e1e1e1;
 	}
+
+	.edu-content{
+		border-left: 1px solid #e1e1e1;
+		position: absolute; /*to make its height equal to its sibling*/
+		top: 0;
+		right:0;
+		bottom:0; 
+}
+
+	#unsw{
+		border-right: 2px dotted #e1e1e1;
+	}
+
 
 	.single-project {
 		width: 50%;
@@ -302,6 +306,8 @@ Media Queries
 		display: block;
 		visibility: visible;
 	}*/
+
+
 
 }
 
@@ -324,6 +330,22 @@ Media Queries
 	.navbar-right {
 		display: block;
 	}
+
+	.edu-header .divider{
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+	.edu-content{
+		border-left: 1px solid #e1e1e1;
+		position: absolute; /*to make its height equal to its sibling*/
+		top: 0;
+		right:0;
+		bottom:0; 
+	}
+
+	#unsw{
+		border-right: 2px dotted #e1e1e1;
+	}
 }
 
 /* Desktops and laptops ----------- */
@@ -342,6 +364,22 @@ Media Queries
 	}
 	.home-content{
 		animation-delay: 2s ; /*This duration must be equal with draw*/
+	}
+
+	.edu-header .divider{
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+	.edu-content{
+		border-left: 1px solid #e1e1e1;
+		position: absolute; /*to make its height equal to its sibling*/
+		top: 0;
+		right:0;
+		bottom:0; 
+	}
+
+	#unsw{
+		border-right: 2px dotted #e1e1e1;
 	}
 
 
@@ -376,4 +414,22 @@ Media Queries
 	.navbar-right {
 		display: block;
 	}
+
+	.edu-header .divider{
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+	.edu-content{
+		border-left: 1px solid #e1e1e1;
+		position: absolute; /*to make its height equal to its sibling*/
+		top: 0;
+		right:0;
+		bottom:0; 
+	}
+
+	#unsw{
+		border-right: 2px dotted #e1e1e1;
+	}
+
+
 }
