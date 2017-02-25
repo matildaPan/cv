@@ -339,20 +339,20 @@ Components
 }
 
 
-/*#nav-menu {*/
-	/*background-color: #262B30;*/
-	/*border-radius: 0 0 3px 3px;*/
-	/*float: none;*/
-	/*left: 50%;*/
-	/*margin-left: -40px;*/
-	/*min-height: 40px;*/
-	/*position: absolute;*/
-	/*text-align: center;*/
-	/*top: 0;*/
-	/*width: 80px;*/
-	/*z-index: 120;*/
-	/*transition: all 0.3s ease-in-out;*/
-/*}*/
+#nav-menu {
+	background-color: #262B30;
+	border-radius: 0 0 3px 3px;
+	float: none;
+	left: 50%;
+	margin-left: -40px;
+	min-height: 40px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 80px;
+	z-index: 120;
+	transition: all 0.3s ease-in-out;
+}
 
 #nav-menu:hover {
 	background-color: #08275D;

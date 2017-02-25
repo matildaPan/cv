@@ -1,4 +1,4 @@
-app.controller('navController', ['$scope', '$state ', function($scope, $state ){
+app.controller('navController', ['$scope',  function($scope ){
 	$scope.isCollapsed = true;
 }]);
 
