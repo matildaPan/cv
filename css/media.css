@@ -149,9 +149,9 @@ Media Queries
 /* iPhone 6+ (landscape) ----------- */
 @media only screen and (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
 
-	.navbar {
-		background: none !important;
-	}
+	/*.navbar {*/
+		/*background: none !important;*/
+	/*}*/
 	.navbar-nav > li.active{
 		border-bottom:none;
 			
@@ -159,14 +159,14 @@ Media Queries
 	.navbar-nav > li.active a{
 		color: #9C2A18;
 	}
-	.navbar-right .navbar-nav {
-		display: block;
-		padding: 30px 20px 48px 20px;
-		background: #1f2024;
-		margin: 20px 30px;
-		clear: both;
-		text-align: center;
-	}
+	/*.navbar-right .navbar-nav {*/
+		/*display: block;*/
+		/*padding: 30px 20px 48px 20px;*/
+		/*background: #1f2024;*/
+		/*margin: 20px 30px;*/
+		/*clear: both;*/
+		/*text-align: center;*/
+	/*}*/
 
 
 	.home_title_sub{
