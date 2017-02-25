@@ -1,7 +1,6 @@
 app.controller('navController', ['$scope', '$state ', function($scope, $state ){
 	$scope.isCollapsed = true;
-	
-}])
+}]);
 
 // Home Page
 app.controller('homeController', ['$scope', '$location', 'textService', function ($scope, $location, textService) {
