@@ -257,6 +257,8 @@ Media Queries
 
 	#home svg{
 		display: block;
+		width: 800px;
+		height: 800px;
 	}
 
 	.home-content{
@@ -349,6 +351,7 @@ Media Queries
 	#home svg {
 		width: 1000px;
 		height: 1000px;
+		top: 300px;
 		display: block;
 	}
 	.home-content{
