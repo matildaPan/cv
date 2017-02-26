@@ -20,31 +20,47 @@ app.controller('portfolioController', ['$scope', '$location', 'textService', '$d
 
 //Project Section in Portfolio page
 app.controller('projectsController', ['$scope', '$uibModal', function($scope, $uibModal){
-	$scope.webDetail = function() {
+	$scope.webDetail = function(projectName) {
 		$uibModal.open({
 			animation: true,
+            resolve: {
+				name: function () {
+					return projectName;
+                }
+			},
 			templateUrl: 'partials/portfolio/webDetail.html',
 			controller: 'projectInstanceCtrl'
 		});
 	};
 
-	$scope.surveyDetail = function() {
-		$uibModal.open({
-			animation: true,
-			templateUrl: 'partials/portfolio/surveyDetail.html',
-			controller: 'projectInstanceCtrl'
-		});
-	};
-
-
 }]);
 
-app.controller('projectInstanceCtrl', ['$scope', function($scope){
+app.controller('projectInstanceCtrl', ['$scope', 'name', function($scope, name){
 	$scope.slidesInterval = 3000;
 	$scope.noWrapSlides = false;
-	$scope.webSlides = [{image: 'css/images/projects/laravel/create-page.jpg', text: 'Create Project'}, {image: 'css/images/projects/laravel/edit-page.jpg', text: 'Edit Page'}, {image: 'css/images/projects/laravel/output-page.jpg', text: 'Output Page'}, {image: 'css/images/projects/laravel/edit-single-project.jpg', text: 'Edit Single Project'}, {image: 'css/images/projects/laravel/group-bar-chart.jpg', text: 'Group Bar Chart'}, {image: 'css/images/projects/laravel/single-bar-chart.jpg', text: 'Single Bar Chart'},  {image: 'css/images/projects/laravel/stacked-bar-chart.jpg', text: 'Stacked Bar Chart'}];
 
-	$scope.surveySlides = [{image: 'css/images/projects/surveys/vaccination.jpg', text: 'Survey Example 1'}, {image: 'css/images/projects/surveys/sansom.jpg', text: 'Survey Example 2'}, {image: 'css/images/projects/surveys/hand_wash.jpg', text: 'Survey Example 3'}];
+	var laravelSlides = [
+		{image: 'css/images/projects/laravel/create-page.jpg', text: 'Create Project'},
+		{image: 'css/images/projects/laravel/edit-page.jpg', text: 'Edit Page'},
+		{image: 'css/images/projects/laravel/output-page.jpg', text: 'Output Page'},
+		{image: 'css/images/projects/laravel/edit-single-project.jpg', text: 'Edit Single Project'},
+		{image: 'css/images/projects/laravel/group-bar-chart.jpg', text: 'Group Bar Chart'},
+		{image: 'css/images/projects/laravel/single-bar-chart.jpg', text: 'Single Bar Chart'},
+		{image: 'css/images/projects/laravel/stacked-bar-chart.jpg', text: 'Stacked Bar Chart'}
+	];
+
+	var surveySlides = [
+		{image: 'css/images/projects/surveys/vaccination.jpg', text: 'Survey Example 1'},
+		{image: 'css/images/projects/surveys/sansom.jpg', text: 'Survey Example 2'},
+		{image: 'css/images/projects/surveys/hand_wash.jpg', text: 'Survey Example 3'}
+	];
+
+	if(name == 'laravel'){
+		$scope.webSlides = laravelSlides;
+	}else if(name == 'survey'){
+		$scope.webSlides = surveySlides;
+	}
+
 }]);
 
 //Contact Page
