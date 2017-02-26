@@ -39,6 +39,22 @@ app.controller('projectInstanceCtrl', ['$scope', 'name', function($scope, name){
 	$scope.slidesInterval = 3000;
 	$scope.noWrapSlides = false;
 
+	var campaignSystem = [
+		{image: 'css/images/projects/campaignSystem/accounts.png', text: 'Accounts'},
+		{image: 'css/images/projects/campaignSystem/campaigns.png', text: 'Campaigns'},
+		{image: 'css/images/projects/campaignSystem/mediabookings.png', text: 'Media Bookings'},
+		{image: 'css/images/projects/campaignSystem/campaign-detail.png', text: 'Campaign Detail'},
+		{image: 'css/images/projects/campaignSystem/campaign-contents.png', text: 'Campaign Contents'},
+		{image: 'css/images/projects/campaignSystem/landing-page.png', text: 'Landing Page'}
+	];
+
+	var campaignApproval = [
+        {image: 'css/images/projects/campaignApproval/change-articles.png', text: 'Change Articles'},
+        {image: 'css/images/projects/campaignApproval/change-products.png', text: 'Change Products'},
+        {image: 'css/images/projects/campaignApproval/schedule.png', text: 'Schedule Campaign'},
+        {image: 'css/images/projects/campaignApproval/content-panel.png', text: 'Content Panel'}
+    ];
+
 	var laravelSlides = [
 		{image: 'css/images/projects/laravel/create-page.jpg', text: 'Create Project'},
 		{image: 'css/images/projects/laravel/edit-page.jpg', text: 'Edit Page'},
@@ -57,8 +73,10 @@ app.controller('projectInstanceCtrl', ['$scope', 'name', function($scope, name){
 
 	if(name == 'laravel'){
 		$scope.webSlides = laravelSlides;
-	}else if(name == 'survey'){
-		$scope.webSlides = surveySlides;
+	}else if(name == 'campaign system'){
+		$scope.webSlides = campaignSystem;
+	}else if(name == 'campaign approval'){
+		$scope.webSlides = campaignApproval;
 	}
 
 }]);
